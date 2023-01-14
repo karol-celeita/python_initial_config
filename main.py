@@ -1,11 +1,15 @@
+from constants import DEFAULT_NAME_FILE
 
 # Firstly we have to import 'xml.etree.ElementTree' for creating a subtree
 import xml.etree.ElementTree as ET
 
 users_list = ["GeeksForGeeks", "Arka", "Computer Science", "Engineering", "Portal"]
 
-def create_xml(name_file_xml="default"):
+def create_xml(name_file_xml=DEFAULT_NAME_FILE):
     """_summary_
+
+    Args:
+        name_file_xml (str, optional): _description_. Defaults to "default".
     """
     try:
         # we make root element
